@@ -1,0 +1,43 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+body{
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+    background-color: #edeeed;
+}
+.drops{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.drop{
+    position: relative;
+    background-color: transparent;
+    width:200px;
+    height:200px;
+    border-radius: 55% 45% 38% 62% / 64% 71% 29% 36% ;
+    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.05),15px 25px 10px rgba(0,0,0,0.1),
+    15px 20px 20px rgba(0,0,0,0.05),inset -10px -10px 15px rgba(255,255,255,0.9);
+}
+.drop::after{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    top: 49px;
+    left: 45px;
+    border-radius: 55% 45% 38% 62% / 49% 52% 48% 51%;
+}
+.drop::before{
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 14px;
+    background-color: white;
+    top: 49px;
+    left: 76px;
+    border-radius: 55% 45% 38% 62% / 49% 52% 48% 51%;
+}
