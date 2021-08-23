@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    padding:0;
+    background: url('./bg1.jpg') no-repeat center fixed;
+    height: 100vh;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.8);
+    width: 456px;
+    border-radius: 12px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+.title{
+  text-transform: capitalize;
+  text-align: center;
+}
+.input-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.inputLabel{
+    text-align: left;
+    width:100%;
+    font-size: 16px;
+    transition: .5s all ease;
+}
+.inputText{
+    outline: none;
+    width: 100%;
+    margin-bottom: 28px;
+    height: auto;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color:white;
+    transition: .5s all ease;
+    letter-spacing: 1px;
+}
+
+.btn{
+    background-color: #3498db;
+    width: 108px;
+    border: none;
+    height: 43px;
+    border-radius: 5px;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #72b3df;
+}
+
+.inputText:focus , .inputText:valid{
+   height: 35px;
+}
+.inputText:focus{
+    border-bottom: 2px solid #3498db;
+}
+.inputText:focus ~ .inputLabel{
+    color: #3498db;
+    font-size: 13px;
+ }

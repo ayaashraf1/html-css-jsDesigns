@@ -1,0 +1,47 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+body{
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+}
+i.fa{
+    font-size: 15px;
+    color: white;
+    position: fixed;
+    right: 13px;
+    top: 12px;
+    background: purple;
+    padding: 7px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border:1px solid black;
+    border-radius: 2px;
+}
+.fa.active{
+    transform: translateX(-172px);
+    border:none;
+    border-radius: unset;
+}
+ul{
+    position: fixed;
+    right: 0px;
+    top: 5px;
+    background: purple;
+    height: 100vh;
+    width: 146px;
+    list-style-type: none;
+    margin-top: 0px;
+    transition: 1s ease-in;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+li{
+    margin-top: 14px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul.active{
+   transform: translateX(0%);
+}

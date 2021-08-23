@@ -1,0 +1,84 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    margin:0;
+    padding:0;
+    background: url('./bg1.jpg') no-repeat center fixed;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:380px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    padding: 25px;
+    position: relative;
+}
+.login-box h1{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-top: 30px;
+}
+.login-box label{
+  width: 100%;
+  text-align: left;
+}
+.login-box input[type=text], .login-box input[type="password"]{
+    width: 100%;
+    outline: none;
+    border:none;
+    border-bottom:1px solid white;
+    background-color: transparent;
+    margin-bottom: 22px;
+    padding: 3px 0px;
+    color:white;
+  }
+  .login-box input[type=submit]{
+    width: 100%;
+    padding: 7px 0px;
+    border-radius: 40px;
+    border: none;
+    background: #2980b9;
+    color: white;
+    margin-bottom: 22px;
+    font-weight: bold;
+  }
+  .login-box input[type=submit]:hover{
+    background: #27ae60;
+    cursor: pointer;
+  }
+  .login-box a{
+    text-align: left;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding-bottom: 43px;
+  }
+  .login-box a:hover{
+      color:#27ae60;
+  }
+  .userImg{
+    font-size: 38px;
+    color: white;
+    background: #2980b9;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+}

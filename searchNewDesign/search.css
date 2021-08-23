@@ -1,0 +1,104 @@
+ /*
+ ** My solution
+  */
+ @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    padding: 0;
+    margin:0;
+    background-color: #d35400;
+}
+.search-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.search-text{
+    outline: none;
+    border: none;
+    background-color: #2c3e50;
+    width:0px;
+    padding: 12px;
+    border-radius: 30px;
+    color:white
+}
+.search-icon{
+    text-decoration: none;
+    position: absolute;
+    right: -21%;
+    top: -4%;
+    color: #d35400;
+    background-color: #2c3e50;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70%;
+}
+.search-box:hover > .search-text{
+     width: 279px;
+     transition: 0.4s;
+}
+.search-box:hover > .search-icon{
+    right: 3%;
+    top: 14%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* 
+**channel solution
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    padding: 0;
+    margin:0;
+    background-color: #d35400;
+}
+.search-box{
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   background-color: #2c3e50;
+   border-radius: 40px;
+   padding: 10px;
+   height:40px;
+}
+.search-icon{
+    background-color:#2c3e50 ;
+    float: right;
+    color:#d35400;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-text{
+    border: none;
+    outline: none;
+    background:none ;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size:16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width:0;
+}
+.search-box:hover > .search-text{
+    width:240px;
+    transition: 0.4s;
+}
+.search-box:hover > .search-icon{
+    background-color: white;
+    transition: 0.4s;
+} */
