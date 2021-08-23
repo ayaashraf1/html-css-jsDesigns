@@ -1,0 +1,47 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    background: black;
+}
+#section{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events: none;
+}
+.slide{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+video{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+#content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    font-size: 1.5rem;
+    margin-top: 260vh;
+}
+#content h2{
+    font-size: 3rem;
+}
+#slide1{
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+} 
+#slide2{
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
